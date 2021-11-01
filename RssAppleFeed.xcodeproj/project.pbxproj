@@ -15,6 +15,11 @@
 		7C96E7151EA928D400277536 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C96E7141EA928D400277536 /* Assets.xcassets */; };
 		7C96E7181EA928D400277536 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C96E7161EA928D400277536 /* LaunchScreen.storyboard */; };
 		7CF633E71EA9636600067FD1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF633E61EA9636600067FD1 /* Constants.swift */; };
+		9E24B74A2730040B00666443 /* InitialViewController + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E24B7492730040B00666443 /* InitialViewController + Ext.swift */; };
+		9E24B74C2730052B00666443 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E24B74B2730052B00666443 /* FeedTableViewCell.swift */; };
+		9E24B74E2730056600666443 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E24B74D2730056600666443 /* DetailsTableViewCell.swift */; };
+		9E24B7502730059100666443 /* DetailsViewController + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E24B74F2730059100666443 /* DetailsViewController + Ext.swift */; };
+		9E24B75327300A9300666443 /* InitialVCVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E24B75227300A9300666443 /* InitialVCVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		7C96E7171EA928D400277536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C96E7191EA928D400277536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CF633E61EA9636600067FD1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9E24B7492730040B00666443 /* InitialViewController + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InitialViewController + Ext.swift"; sourceTree = "<group>"; };
+		9E24B74B2730052B00666443 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		9E24B74D2730056600666443 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
+		9E24B74F2730059100666443 /* DetailsViewController + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailsViewController + Ext.swift"; sourceTree = "<group>"; };
+		9E24B75227300A9300666443 /* InitialVCVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialVCVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				7C96E70C1EA928D400277536 /* InitialViewController.swift */,
+				9E24B7492730040B00666443 /* InitialViewController + Ext.swift */,
 			);
 			name = InitialViewController;
 			sourceTree = "<group>";
@@ -62,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				7C41C3061EAAB01400BBCE1C /* DetailsViewController.swift */,
+				9E24B74F2730059100666443 /* DetailsViewController + Ext.swift */,
 			);
 			name = DetailsViewController;
 			sourceTree = "<group>";
@@ -70,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				7C96E70E1EA928D400277536 /* Main.storyboard */,
+				9E24B74B2730052B00666443 /* FeedTableViewCell.swift */,
+				9E24B74D2730056600666443 /* DetailsTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -96,6 +110,7 @@
 				7C96E70A1EA928D400277536 /* AppDelegate.swift */,
 				7CF633E61EA9636600067FD1 /* Constants.swift */,
 				7C41C3081EAAD20800BBCE1C /* View */,
+				9E24B7512730095C00666443 /* ViewModels */,
 				7C41C2FD1EAAAB7C00BBCE1C /* ViewControllers */,
 				7C96E7141EA928D400277536 /* Assets.xcassets */,
 				7C96E7161EA928D400277536 /* LaunchScreen.storyboard */,
@@ -103,6 +118,14 @@
 				7C96E7111EA928D400277536 /* RssAppleFeed.xcdatamodeld */,
 			);
 			path = RssAppleFeed;
+			sourceTree = "<group>";
+		};
+		9E24B7512730095C00666443 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9E24B75227300A9300666443 /* InitialVCVM.swift */,
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +160,7 @@
 				TargetAttributes = {
 					7C96E7061EA928D400277536 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 57UJ9GZ83H;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -146,6 +170,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -179,9 +204,14 @@
 			files = (
 				7C96E7131EA928D400277536 /* RssAppleFeed.xcdatamodeld in Sources */,
 				7C41C3071EAAB01400BBCE1C /* DetailsViewController.swift in Sources */,
+				9E24B74C2730052B00666443 /* FeedTableViewCell.swift in Sources */,
 				7C96E70D1EA928D400277536 /* InitialViewController.swift in Sources */,
+				9E24B75327300A9300666443 /* InitialVCVM.swift in Sources */,
+				9E24B74A2730040B00666443 /* InitialViewController + Ext.swift in Sources */,
 				7C96E70B1EA928D400277536 /* AppDelegate.swift in Sources */,
+				9E24B74E2730056600666443 /* DetailsTableViewCell.swift in Sources */,
 				7CF633E71EA9636600067FD1 /* Constants.swift in Sources */,
+				9E24B7502730059100666443 /* DetailsViewController + Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,11 +332,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 57UJ9GZ83H;
 				INFOPLIST_FILE = RssAppleFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Home.RssAppleFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -314,11 +346,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 57UJ9GZ83H;
 				INFOPLIST_FILE = RssAppleFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Home.RssAppleFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
